@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for the Freely application.",
+  "main": "dist/server.js",
+  "scripts": {
+    "start:dev": "nodemon -r dotenv/config ./dist/server.js",
+    "build:dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sanket Sadadiya",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.0",
+    "@types/ws": "^8.18.1",
+    "nodemon": "~3.1.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "mongoose": "^9.2.1",
+    "nostr-tools": "~2.13.0",
+    "ws": "^8.19.0"
+  }
+}
